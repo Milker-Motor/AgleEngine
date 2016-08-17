@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6300A6151D638728006DFBA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300A6141D638728006DFBA7 /* main.m */; };
+		6300A6181D638728006DFBA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300A6171D638728006DFBA7 /* AppDelegate.m */; };
+		6300A61E1D638728006DFBA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6300A61C1D638728006DFBA7 /* Main.storyboard */; };
+		6300A6201D638728006DFBA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6300A61F1D638728006DFBA7 /* Assets.xcassets */; };
+		6300A6231D638728006DFBA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6300A6211D638728006DFBA7 /* LaunchScreen.storyboard */; };
+		6300A62F1D638926006DFBA7 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300A62E1D638926006DFBA7 /* TableViewCell.m */; };
+		6300A6321D6389DD006DFBA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300A6311D6389DD006DFBA7 /* ViewController.m */; };
+		6300A6351D639211006DFBA7 /* BingReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300A6341D639211006DFBA7 /* BingReader.m */; };
+		630A28241D65137A00C76257 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A28231D65137A00C76257 /* WebViewController.m */; };
+		632D12481D65279500CD332A /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300A6391D6396CA006DFBA7 /* libxml2.2.tbd */; };
+		63A78D901D64AAB100EAC8D0 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A78D8D1D64AAB100EAC8D0 /* HTMLNode.m */; };
+		63A78D911D64AAB100EAC8D0 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A78D8F1D64AAB100EAC8D0 /* HTMLParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6300A6101D638727006DFBA7 /* AgleEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgleEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6300A6141D638728006DFBA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6300A6161D638728006DFBA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6300A6171D638728006DFBA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6300A61D1D638728006DFBA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6300A61F1D638728006DFBA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6300A6221D638728006DFBA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6300A6241D638728006DFBA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6300A62D1D638926006DFBA7 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		6300A62E1D638926006DFBA7 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		6300A6301D6389DD006DFBA7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6300A6311D6389DD006DFBA7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6300A6331D639211006DFBA7 /* BingReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingReader.h; sourceTree = "<group>"; };
+		6300A6341D639211006DFBA7 /* BingReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingReader.m; sourceTree = "<group>"; };
+		6300A6391D6396CA006DFBA7 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		630A28221D65137A00C76257 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		630A28231D65137A00C76257 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		63A78D771D63B38500EAC8D0 /* libGDataXML-HTML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGDataXML-HTML.a"; path = "../../../Library/Developer/Xcode/DerivedData/AgleEngine-blmeodbwkelfoqfonblvoyfpgevc/Build/Products/Debug-iphonesimulator/GDataXML-HTML/libGDataXML-HTML.a"; sourceTree = "<group>"; };
+		63A78D781D63B38500EAC8D0 /* libreact-native-xml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libreact-native-xml.a"; path = "../../../Library/Developer/Xcode/DerivedData/AgleEngine-blmeodbwkelfoqfonblvoyfpgevc/Build/Products/Debug-iphonesimulator/react-native-xml/libreact-native-xml.a"; sourceTree = "<group>"; };
+		63A78D791D63B38500EAC8D0 /* libReact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReact.a; path = "../../../Library/Developer/Xcode/DerivedData/AgleEngine-blmeodbwkelfoqfonblvoyfpgevc/Build/Products/Debug-iphonesimulator/React/libReact.a"; sourceTree = "<group>"; };
+		63A78D7F1D63B3AD00EAC8D0 /* libPods-AgleEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AgleEngine.a"; path = "../../../Library/Developer/Xcode/DerivedData/AgleEngine-blmeodbwkelfoqfonblvoyfpgevc/Build/Products/Debug-iphonesimulator/libPods-AgleEngine.a"; sourceTree = "<group>"; };
+		63A78D8C1D64AAB100EAC8D0 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		63A78D8D1D64AAB100EAC8D0 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		63A78D8E1D64AAB100EAC8D0 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		63A78D8F1D64AAB100EAC8D0 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		996D371352A1E641A9953658 /* libPods-AgleEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AgleEngine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6300A60D1D638727006DFBA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632D12481D65279500CD332A /* libxml2.2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6300A6071D638727006DFBA7 = {
+			isa = PBXGroup;
+			children = (
+				6300A6391D6396CA006DFBA7 /* libxml2.2.tbd */,
+				6300A6121D638727006DFBA7 /* AgleEngine */,
+				6300A6111D638727006DFBA7 /* Products */,
+				CC8C56E3C8365B70B4D81A2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6300A6111D638727006DFBA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6300A6101D638727006DFBA7 /* AgleEngine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6300A6121D638727006DFBA7 /* AgleEngine */ = {
+			isa = PBXGroup;
+			children = (
+				63A78D8B1D64AA7300EAC8D0 /* HTML Parsing */,
+				6300A6161D638728006DFBA7 /* AppDelegate.h */,
+				6300A6171D638728006DFBA7 /* AppDelegate.m */,
+				6300A6301D6389DD006DFBA7 /* ViewController.h */,
+				6300A6311D6389DD006DFBA7 /* ViewController.m */,
+				630A28221D65137A00C76257 /* WebViewController.h */,
+				630A28231D65137A00C76257 /* WebViewController.m */,
+				6300A62D1D638926006DFBA7 /* TableViewCell.h */,
+				6300A62E1D638926006DFBA7 /* TableViewCell.m */,
+				6300A6331D639211006DFBA7 /* BingReader.h */,
+				6300A6341D639211006DFBA7 /* BingReader.m */,
+				6300A61C1D638728006DFBA7 /* Main.storyboard */,
+				6300A61F1D638728006DFBA7 /* Assets.xcassets */,
+				6300A6211D638728006DFBA7 /* LaunchScreen.storyboard */,
+				6300A6241D638728006DFBA7 /* Info.plist */,
+				6300A6131D638728006DFBA7 /* Supporting Files */,
+			);
+			path = AgleEngine;
+			sourceTree = "<group>";
+		};
+		6300A6131D638728006DFBA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6300A6141D638728006DFBA7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63A78D8B1D64AA7300EAC8D0 /* HTML Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				63A78D8C1D64AAB100EAC8D0 /* HTMLNode.h */,
+				63A78D8D1D64AAB100EAC8D0 /* HTMLNode.m */,
+				63A78D8E1D64AAB100EAC8D0 /* HTMLParser.h */,
+				63A78D8F1D64AAB100EAC8D0 /* HTMLParser.m */,
+			);
+			name = "HTML Parsing";
+			sourceTree = "<group>";
+		};
+		CC8C56E3C8365B70B4D81A2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A78D7F1D63B3AD00EAC8D0 /* libPods-AgleEngine.a */,
+				63A78D771D63B38500EAC8D0 /* libGDataXML-HTML.a */,
+				63A78D781D63B38500EAC8D0 /* libreact-native-xml.a */,
+				63A78D791D63B38500EAC8D0 /* libReact.a */,
+				996D371352A1E641A9953658 /* libPods-AgleEngine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6300A60F1D638727006DFBA7 /* AgleEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6300A6271D638728006DFBA7 /* Build configuration list for PBXNativeTarget "AgleEngine" */;
+			buildPhases = (
+				6300A60C1D638727006DFBA7 /* Sources */,
+				6300A60D1D638727006DFBA7 /* Frameworks */,
+				6300A60E1D638727006DFBA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgleEngine;
+			productName = AgleEngine;
+			productReference = 6300A6101D638727006DFBA7 /* AgleEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6300A6081D638727006DFBA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Lesha;
+				TargetAttributes = {
+					6300A60F1D638727006DFBA7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6300A60B1D638727006DFBA7 /* Build configuration list for PBXProject "AgleEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6300A6071D638727006DFBA7;
+			productRefGroup = 6300A6111D638727006DFBA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6300A60F1D638727006DFBA7 /* AgleEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6300A60E1D638727006DFBA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6300A6231D638728006DFBA7 /* LaunchScreen.storyboard in Resources */,
+				6300A6201D638728006DFBA7 /* Assets.xcassets in Resources */,
+				6300A61E1D638728006DFBA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6300A60C1D638727006DFBA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6300A6181D638728006DFBA7 /* AppDelegate.m in Sources */,
+				6300A6351D639211006DFBA7 /* BingReader.m in Sources */,
+				63A78D901D64AAB100EAC8D0 /* HTMLNode.m in Sources */,
+				630A28241D65137A00C76257 /* WebViewController.m in Sources */,
+				6300A62F1D638926006DFBA7 /* TableViewCell.m in Sources */,
+				6300A6321D6389DD006DFBA7 /* ViewController.m in Sources */,
+				63A78D911D64AAB100EAC8D0 /* HTMLParser.m in Sources */,
+				6300A6151D638728006DFBA7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6300A61C1D638728006DFBA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6300A61D1D638728006DFBA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6300A6211D638728006DFBA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6300A6221D638728006DFBA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6300A6261D638728006DFBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6300A6291D638728006DFBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = AgleEngine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.AgleEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6300A60B1D638727006DFBA7 /* Build configuration list for PBXProject "AgleEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6300A6261D638728006DFBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6300A6271D638728006DFBA7 /* Build configuration list for PBXNativeTarget "AgleEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6300A6291D638728006DFBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6300A6081D638727006DFBA7 /* Project object */;
+}

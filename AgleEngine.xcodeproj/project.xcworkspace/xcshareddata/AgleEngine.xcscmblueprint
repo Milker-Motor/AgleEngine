@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "52C9997849AECDE8461F5B41AC8988FFCF255A15",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "52C9997849AECDE8461F5B41AC8988FFCF255A15" : 0,
+    "B708B879D531AE4011861E6EA7138F1B36C56ABC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6408BFA2-9B3A-4D1E-87B9-22533508F111",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "52C9997849AECDE8461F5B41AC8988FFCF255A15" : "AgleEngine\/",
+    "B708B879D531AE4011861E6EA7138F1B36C56ABC" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AgleEngine",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AgleEngine.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Milker-Motor\/AgleEngine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "52C9997849AECDE8461F5B41AC8988FFCF255A15"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Milker-Motor\/AgleEngine",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B708B879D531AE4011861E6EA7138F1B36C56ABC"
+    }
+  ]
+}
