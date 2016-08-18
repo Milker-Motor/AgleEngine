@@ -37,6 +37,23 @@
     }
 }
 
+- (void)downloadImageWithURL:(NSURL *)url completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock
+{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                               if ( !error )
+                               {
+                                   UIImage *image = [[UIImage alloc] initWithData:data];
+                                   completionBlock(YES,image);
+                               } else{
+                                   completionBlock(NO,nil);
+                               }
+                           }];
+}
+
+
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -93,31 +110,21 @@
     
     cell.title.text = title;
     cell.subTitle.text = subTitle;
+    cell.previewImage.image = nil;
     if (image)
-        cell.imageView.image = image;
+        cell.previewImage.image = image;
     else if (pathImage.length)
     {
-        cell.tag = indexPath.row;
-        cell.imageView.image = nil;
-        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-        dispatch_async(queue, ^(void) {
-            
-            NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:pathImage]];
-                                 
-                                 UIImage* image = [[UIImage alloc] initWithData:imageData];
-                                 if (image) {
-                                     dispatch_async(dispatch_get_main_queue(), ^{
-                                         if (cell.tag == indexPath.row) {
-                                             cell.imageView.image = image;
-                                             if (objectsWithImages.count > indexPath.row)
-                                             {
-                                                 [objectsWithImages[indexPath.row] setObject:image forKey:@"image"];
-                                                 [cell setNeedsLayout];
-                                             }
-                                         }
-                                     });
-                                 }
-                                 });
+        [self downloadImageWithURL:[NSURL URLWithString:subTitle] completionBlock:^(BOOL succeeded, UIImage *image) {
+            if (succeeded) {
+                cell.previewImage.image = image;
+                [cell setNeedsLayout];
+                if (image) {
+                    [objectsWithImages[indexPath.row] setObject:image forKey:@"image"];
+                }
+                
+            }
+        }];
     }
     
     return cell;
